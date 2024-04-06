@@ -1,0 +1,69 @@
+#imagen-fondo {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-image: url(fondo-karol.png); /* Corregido el formato de la URL */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.9;
+    z-index: -1;
+}
+
+h1 {
+    position: relative;
+    margin: 50px auto;
+    width: 80%;
+    max-width: 800px; /* Ancho máximo para computadoras */
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    color: #000000;
+}
+
+
+.img-GaleriaKarolG{
+    width: 100%;
+    max-width: 1200px; /* Ancho máximo para computadoras */
+    margin: 80px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    grid-gap: 30px;
+}
+
+.img-GaleriaKarolG img {
+    width: 95%;
+    height: auto;
+    cursor: pointer;
+    transition: 2s;
+    border-radius: 15px
+
+}
+.img-GaleriaKarolG img:hover{
+transform: scale(1.2) ;
+}
+.ful-img{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.9);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index:99 ;
+}
+.ful-img span{
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    font-size: 30px;
+    color: azure;
+    cursor: pointer;
+
+}
+.ful-img img{
+    width: 90%;
+    max-width: 600px;
+}
+
